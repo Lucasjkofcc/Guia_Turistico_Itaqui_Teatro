@@ -2,3 +2,13 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 36px;
 }
+.botao-grande {
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    padding: 0.5em 1.2em;  /* Cria o espaçamento ideal ao redor do texto de 36px */
+    line-height: 1;        /* Remove folgas invisíveis que achatam o botão */
+    display: inline-flex;  /* Garante o alinhamento perfeito do texto no centro */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;       /* Faz o cursor virar a "mãozinha" do clique */
+}
