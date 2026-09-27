@@ -1,29 +1,53 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="color-scheme" content="dark light">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Teatro Prezewodowski</title>
 </head>
 <body>
-    <button class="botao-grande" onclick="Espanhol()">Leer en español</button>
-    <button class="botao-grande" onclick="English()">Read in English</button>
-    <button class="botao-grande" onclick="Portuguese()">Ler em português</button>
-    <h1>Teatro Prezewodowski</h1>
-    <img src="Imagens/Image1.jpeg" alt="Imagem do Teatro Prezewodowski que não carregou :(" width="800" height="500">
-    <img src="Imagens/Image2.jpeg" alt="Imagem do Teatro Prezewodowski que não carregou :(" width="800" height="500">
-    <p><a>O Teatro (grafia original: Theatro) Prezewodowski é um dos mais antigos teatros da América Latina, com sua pedra fundamental lançada em 1883 e sua inauguração em 1886. É um prédio tombado pelo Instituto do Patrimônio Histórico e Artístico do Estado (IPHAE). Durante décadas o teatro serviu de palco para apresentações de campanhas artísticas nacionais e internacionais e acontecimentos sociais locais. Durante a Segunda Guerra as atividades diminuíram. A casa passou a funcionar como cinema, entrando em decadência e sendo fechada, definitivamente, em 1964. Tendo permanecido abandonado por muitos anos, sua recuperação foi concluída em 1992.</a></p>
-    <p><a>O nome do teatro é uma homenagem ao capitão-tenente da Marinha Brasileira Estanislau Prezewodowski, que participou da Guerra do Paraguai e serviu no município entre 1872-74. A característica mais impressionante da construção do Teatro, na época de sua construção, era a plateia móvel, com a finalidade de nivelar esta parte do palco, pois neste local também eram realizados bailes. Infelizmente, o mecanismo de elevação não existe mais. Outra característica única é a vertente de água abaixo do palco, que os arquitetos da época acreditavam que aprimoraria a acústica do prédio.    </a></p>
-    <p><a>Por muitos anos, além da apresentação de conhecidos artistas do Teatro Nacional, o Theatro Prezewodowski abrigou companhias líricas de renome internacional, que traçavam seu roteiro Rio de Janeiro – São Paulo – Porto Alegre – Buenos Aires – Montevidéu, com escala obrigatória em Itaqui, um dos centros culturais da épocal. O Teatro Prezewodowski é de suma importância para toda comunidade itaquiense e mantém uma agenda de eventos repleta, como espetáculos de teatro, balés, eventos musicais, palestras, seminários, etc. O Teatro recebe cerca de 1000 visitantes por ano e tem capacidade para 218 pessoas.</a></p>
-    <p><a>Atendimento - Secretaria Municipal de Esporte, Cultura, Lazer e Turismo (SMECULT): De segunda a sexta-feira, das 7h às 13h. A secretaria fica no acesso à direita do teatro.</a></p>
-    <img src="Imagens/Image3.jpeg" alt="Imagem do Teatro Prezewodowski que não carregou :(" width="800" height="500">
-    <img src="Imagens/Image4.jpeg" alt="Imagem do Teatro Prezewodowski que não carregou :(" width="800" height="500">
-    <p><a>Fonte das Imagens: Tânia Meinerz/Cartografia dos Palcos</a></p>
+
+    <!-- BARRA DE IDIOMAS NO TOPO -->
+    <nav class="lang-bar">
+        <button class="botao-grande" onclick="Espanhol()">Leer en español</button>
+        <button class="botao-grande" onclick="English()">Read in English</button>
+        <button class="botao-grande" onclick="Portuguese()">Ler em português</button>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL DO SITE -->
+    <main class="container">
+        <h1>Teatro Prezewodowski</h1>
+        
+        <!-- BLOCO DE TEXTOS (MAPEADOS PARA TRADUÇÃO) -->
+        <section class="history-section">
+            <p class="texto-idioma">O Teatro (grafia original: Theatro) Prezewodowski é um dos mais antigos teatros da América Latina, com sua pedra fundamental lançada em 1883 e sua inauguração em 1886. É um prédio tombado pelo Instituto do Patrimônio Histórico e Artístico do Estado (IPHAE). Durante décadas o teatro serviu de palco para apresentações de campanhas artísticas nacionais e internacionais e acontecimentos sociais locais. Durante a Segunda Guerra as atividades diminuíram. A casa passou a funcionar como cinema, entrando em decadência e sendo fechada, definitivamente, em 1964. Tendo permanecido abandonado por muitos anos, sua recuperação foi concluída em 1992.</p>
+            
+            <p class="texto-idioma">O nome do teatro é uma homenagem ao capitão-tenente da Marinha Brasileira Estanislau Prezewodowski, que participou da Guerra do Paraguai e serviu no município entre 1872-74. A característica mais impressionante da construção do Teatro, na época de sua construção, era a plateia móvel, com a finalidade de nivelar esta parte do palco, pois neste local também eram realizados bailes. Infelizmente, o mecanismo de elevação não existe mais. Outra característica única é a vertente de água abaixo do palco, que os arquitetos da época acreditavam que aprimoraria a acústica do prédio.</p>
+            
+            <p class="texto-idioma">Por muitos anos, além da apresentação de conhecidos artistas do Teatro Nacional, o Theatro Prezewodowski abrigou companhias líricas de renome internacional, que traçavam seu roteiro Rio de Janeiro – São Paulo – Porto Alegre – Buenos Aires – Montevidéu, com escala obrigatória em Itaqui, um dos centros culturais da época. O Teatro Prezewodowski é de suma importância para toda comunidade itaquiense e mantém uma agenda de eventos repleta, como espetáculos de teatro, balés, eventos musicais, palestras, seminários, etc. O Teatro recebe cerca de 1000 visitantes por ano e tem capacidade para 218 pessoas.</p>
+            
+            <!-- CAIXA DE ATENDIMENTO DESTAQUE -->
+            <div class="atendimento-box texto-idioma">O horário de atendimento da Secretaria Municipal de Esporte, Cultura, Lazer e Turismo (SMECULT) é de segunda a sexta-feira, das 7h às 13h. A secretaria fica no acesso à direita do teatro.</div>
+        </section>
+
+        <!-- GALERIA COM AS 4 FOTOS EM GRADE -->
+        <section class="gallery-grid">
+            <img src="Imagens/Image1.jpeg" alt="Fachada do Teatro Prezewodowski">
+            <img src="Imagens/Image2.jpeg" alt="Interior do Teatro Prezewodowski">
+            <img src="Imagens/Image3.jpeg" alt="Detalhes históricos do Teatro">
+            <img src="Imagens/Image4.jpeg" alt="Palco do Teatro">
+        </section>
+
+        <!-- CRÉDITOS DAS IMAGENS -->
+        <p class="source-footer">Fonte das Imagens: Tânia Meinerz/Cartografia dos Palcos</p>
+    </main>
+
+    <!-- CARREGAMENTO DO SCRIPT DE TRADUÇÃO -->
     <script src="main.js"></script>
 </body>
 </html>
