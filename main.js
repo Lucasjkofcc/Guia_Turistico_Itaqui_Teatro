@@ -9,11 +9,10 @@ function Espanhol(){
 
 function English(){
     const paragrafos = document.querySelectorAll(".texto-idioma");
-    paragrafos[0].textContent = ""
-    paragrafos[1].textContent = ""
-    paragrafos[2].textContent = ""
-    paragrafos[3].textContent = ""
-    
+    paragrafos[0].textContent = "The Prezewodowski Theater is one of the oldest theaters in Latin America, with its foundation stone placed in 1883 and the inauguration in 1886. It's a building listed as a historical landmark by Institute of Historical and Artistic Heritage of the State (IPHAE). For decades the theater served as a stage for performances of national and international artistic campaigns. During the Second World War the events decreased, the place then started to work as a cinema, falling into disrepair and closing definitively in 1964. After lying abandoned for years, its restoration was completed in 1992.";
+    paragrafos[1].textContent = "The theater is named in honor of Brazilian Navy lieutenant commander Estanislau Prezewodowski, who participated in the war of Paraguay and served in the county between 1872 and 1874. The most impressive feature from the construction period of the theater is the movable audience seating, which was intended to level this part of the stage since dances were also held there; unfortunately, the mechanism no longer exists. Another unique feature is the water channel beneath the stage, which the architects of the time believed would improve the building’s acoustics.";
+    paragrafos[2].textContent = "For many years, in addition to hosting performances of known artists from the National Theater, Prezewodowski theater also housed internationally renowned opera companies, which followed a tour route through Rio de Janeiro - São Paulo - Porto Alegre - Buenos Aires - Montevideo - with a mandatory stop in Itaqui, one of the cultural centers of the era. The Prezewodowski Theater is of fundamental importance to the entire Itaqui community and maintains a full schedule of events, including theater performances, ballets, musical events, lectures, seminars, and more. The theater welcomes approximately 1,000 visitors per year and has a capacity of 218 people.";
+    paragrafos[3].textContent = "Office Hours – Municipal Secretariat of Sports, Culture, Leisure, and Tourism (SMECULT): Monday through Friday, from 7:00 a.m. to 1:00 p.m. The secretariat is located at the entrance to the right of the theater.";
 }
 
 function Portuguese(){
